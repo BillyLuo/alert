@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="alert.js"></script>
+  <link rel="stylesheet" href="alert.css">
+  <style type="text/css">
+    .wrapper {
+      padding: 100px;
+    }
+    button {
+      width: 100px;
+      margin-right: 20px;
+      cursor: pointer;
+      height: 30px;
+      line-height: 30px;
+      border-radius: 4px;
+      border: 1px solid #eee;
+      margin-bottom: 30px;
+    }
+    button:hover {
+      color: #00f;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrapper">
+    <button id="a4" data-type="primary">primary</button>
+    <button id="a5" data-type="secondary">secondary</button>
+    <button id="a1" data-type="success">success</button>
+    <button id="a7" data-type="warning">warning</button>
+    <button id="a2" data-type="error">error</button>
+    <button id="a3" data-type="danger">danger</button>
+    <button id="a6" data-type="light">light</button>
+    <button id="a8" data-type="info">info</button>
+    <a href="javascript:;" id="a9">success</a>
+  </div>
+  <script type="text/javascript">
+    var btns = document.querySelectorAll('button')
+    for (var i = 0;i<btns.length;i++) {
+      btns[i].addEventListener('click', function () {
+        var type = this.getAttribute('data-type')
+        Alert.alert({
+          type: type,
+          content: type,
+          duration: 3500
+        })
+      })
+    }
+    a9.onclick = function () {
+      Alert.success('Alert.success')
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,77 @@
+.alert {
+  display: inline-block;
+  text-align: left;
+  position: relative;
+  padding: 10px 16px;
+  min-width: 200px;
+  max-width: 60%;
+  margin: 0 auto;
+  border: 1px solid transparent;
+  border-radius: .25rem;
+  font-size: 13px;
+  word-break: break-all;
+  -webkit-line-clamp: 2;
+}
+.alert-primary {
+  color: #004085;
+  background-color: #cce5ff;
+  border-color: #b8daff;
+}
+.alert-secondary {
+  color: #383d41;
+  background-color: #e2e3e5;
+  border-color: #d6d8db;
+}
+.alert-success {
+  color: #155724;
+  background-color: #d4edda;
+  border-color: #c3e6cb;
+}
+.alert-danger, .alert-error {
+  color: #721c24;
+  background-color: #f8d7da;
+  border-color: #f5c6cb;
+}
+.alert-warning {
+  color: #856404;
+  background-color: #fff3cd;
+  border-color: #ffeeba;
+}
+.alert-info {
+  color: #0c5460;
+  background-color: #d1ecf1;
+  border-color: #bee5eb;
+}
+.alert-light {
+  color: #818182;
+  background-color: #fefefe;
+  border-color: #fdfdfe;
+}
+.alert-wrapper {
+  text-align: center;
+  position: fixed;
+  top: -80px;
+  left: 0;
+  width: 100%;
+  z-index: 15;
+  animation: move .35s ease-out both;
+}
+.alert-out {
+  animation: moveout .35s ease-out both;
+}
+@keyframes move {
+  from {
+    top: -80px;
+  }
+  to {
+    top: 30px;
+  }
+}
+@keyframes moveout {
+  from {
+    top: 30px;
+  }
+  to {
+    top: -80px;
+  }
+}
