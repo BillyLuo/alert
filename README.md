@@ -19,7 +19,7 @@ or
 ```
 
 
-## api
+## API
 
 Alert.alert(option)
 
@@ -42,7 +42,7 @@ example:
 ```
 
 ```
-另提供Alert.success(content: String, duration: Int)（上述类型）等函数
+另提供Alert.success(content: String, duration: Int)（上述类型primary, success...）等函数
 ```
 
 ## License
