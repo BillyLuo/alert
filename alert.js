@@ -44,7 +44,7 @@
         option.type = types[0]
       }
       if (option.type == 'error') {
-        option.type == 'danger'
+        option.type = 'danger'
       }
       var wrapper = document.createElement('div')
       wrapper.className = 'alert-wrapper'
