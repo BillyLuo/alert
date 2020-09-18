@@ -24,7 +24,7 @@
 		root.Alert = factory();
 	}
 }(this, function() {
-  var types = ['primary', 'secondary', 'success', 'danger', 'warning', 'info','error', 'light']
+  var types = ['primary', 'secondary', 'success', 'danger', 'warning', 'info','error', 'light', 'dark']
   var Alert = {
     alert: function (option) {
       var defaultOption = {

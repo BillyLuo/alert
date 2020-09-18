@@ -45,7 +45,11 @@
 .alert-light {
   color: #818182;
   background-color: #fefefe;
-  border-color: #fdfdfe;
+  border-color: #eee;
+}
+.alert-dark {
+  color: #fff;
+  background-color: rgba(0,0,0,.85);
 }
 .alert-wrapper {
   text-align: center;
@@ -59,6 +63,23 @@
 .alert-out {
   animation: moveout .35s ease-out both;
 }
+
+@media screen and (max-width: 640px) {
+  .alert{
+    display: block;
+    max-width: 100%;
+    border-radius: 0;
+    border: 0;
+    text-align: center;
+  }
+  .alert-wrapper {
+    top: -80px;
+    animation-name: mobile-move;
+  }
+  .alert-out {
+    animation-name: mobile-moveout;
+  }
+}
 @keyframes move {
   from {
     top: -80px;
@@ -70,6 +91,22 @@
 @keyframes moveout {
   from {
     top: 30px;
+  }
+  to {
+    top: -80px;
+  }
+}
+@keyframes mobile-move{
+  from{
+    top: -80px;
+  }
+  to{
+    top: 0;
+  }
+}
+@keyframes mobile-moveout {
+  from {
+    top: 0;
   }
   to {
     top: -80px;

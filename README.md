@@ -45,6 +45,10 @@ example:
 另提供Alert.success(content: String, duration: Int)（上述类型primary, success...）等函数
 ```
 
+# tips
+      
+    移动端使用时不要超过三行字，否则会有些许bug
+    
 ## License
 
 MIT

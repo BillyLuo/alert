@@ -2,8 +2,8 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1,user-scalable=no,minimum-scale=1">
+  <title>a super simple alert</title>
   <script src="alert.js"></script>
   <link rel="stylesheet" href="alert.css">
   <style type="text/css">
@@ -34,22 +34,25 @@
     <button id="a2" data-type="error">error</button>
     <button id="a3" data-type="danger">danger</button>
     <button id="a6" data-type="light">light</button>
-    <button id="a8" data-type="info">info</button>
-    <a href="javascript:;" id="a9">success</a>
+    <button id="a8" data-type="dark">dark</button>
+    <button id="a9" data-type="info">info</button>
+    <a href="javascript:;" id="a10">success</a>
   </div>
   <script type="text/javascript">
     var btns = document.querySelectorAll('button')
     for (var i = 0;i<btns.length;i++) {
       btns[i].addEventListener('click', function () {
         var type = this.getAttribute('data-type')
+        var content = this.innerHTML
+        console.log(this.dataset)
         Alert.alert({
           type: type,
-          content: type,
-          duration: 3500
+          content,
+          duration: 333000
         })
       })
     }
-    a9.onclick = function () {
+    a10.onclick = function () {
       Alert.success('Alert.success')
     }
   </script>
