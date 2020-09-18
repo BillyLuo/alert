@@ -1,9 +1,9 @@
 .alert {
   display: inline-block;
-  text-align: left;
+  text-align: center;
   position: relative;
   padding: 10px 16px;
-  min-width: 200px;
+  min-width: 120px;
   max-width: 60%;
   margin: 0 auto;
   border: 1px solid transparent;
