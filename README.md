@@ -4,7 +4,8 @@
 
 ## 如何使用
 
-- 网页中引入js, css
+- 网页中直接引入js, css
+- var Alert = require('will-alert')
 - 引用示例
   
 ```js

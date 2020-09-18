@@ -1,0 +1,23 @@
+{
+  "name": "will-alert",
+  "version": "1.0.0",
+  "description": "a simple alert",
+  "main": "alert.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BillyLuo/alert.git"
+  },
+  "keywords": [
+    "alert",
+    "bootstrap"
+  ],
+  "author": "will",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/BillyLuo/alert/issues"
+  },
+  "homepage": "https://github.com/BillyLuo/alert#readme"
+}
